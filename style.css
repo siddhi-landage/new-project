@@ -1,0 +1,537 @@
+@font-face {
+    font-family: new;
+    src: url(./NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: pro;
+    src: url(./Rejouice-Headline.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "new";
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.page1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+#cursor {
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 50%;
+    background-color: #ff8138;
+    position: fixed;
+    z-index: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+#cursor h2 {
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+.page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.page1-content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.199);
+    position: relative;
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3.4vw 3vw;
+    color: white;
+}
+.nav h3 {
+    font-size: 1.4vw;
+    font-weight: 120;
+}
+
+.page1-content h1 {
+    color: white;
+    font-family: pro;
+    /* background-color: blue; */
+}
+
+.page1-content h1 span{
+    font-size: 27vw;
+    font-weight: 100;
+    font-family: pro;
+    margin-top: -4vw;
+    display: inline-block;
+    /* background-color:aqua; */
+}
+.page2 {
+    /* height: 100vh; */
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0);
+    position:relative;
+    z-index:14;
+    /* border : 1px solid rgb(50, 47, 255); */
+}
+.page2 .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 6vw 4vw 0vw;
+}
+
+.page2 .nav h3 {
+    font-size: 1.8vw;
+    font-weight: 10;
+    opacity: 1;
+    font-style: new;
+}
+
+.page2 .nav h3 sup {
+    font-size: 1vw;
+}
+.page2 .hr {
+    padding: 1.3vw 3.6vw;
+}
+
+.page2_upper .text {
+    font-family: new;
+    font-size: 1.9vw;
+    word-spacing: 0.4vw;
+    padding: 0vw 4.8vw;
+}
+
+.page2_upper .text .one {
+    padding-left: 10vw;
+}
+
+.text {
+    display :flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text h1 {
+    font-size: 3.9vw;
+    font-weight: 280;
+    font-family: new;
+}
+.page3 {
+    min-height: 100vh;
+    min-width: 100vw;
+    /* background-color: aqua; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 13vw
+}
+.page3 .top3 {
+    height: 100%;
+    display: flex;
+    /* background-color: aliceblue; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+.page3 .top3 .hover-line-effect {
+    position: relative;
+    display: inline-block;
+}
+
+.page3 .top3 h4 {
+    color:black;
+    font-size: 1.4vw;
+    font-weight: 130;
+    margin-bottom: 1.15vw;
+}
+.page3 .top3 .hover-line-effect h2 {
+    color:black;
+    font-size: 4.7vw;
+    font-weight: 480;
+}
+.page3 .top3 .hover-line-effect hr {
+    position: absolute;
+    left: 0;
+    bottom:-0.2em; /* Adjust this value to place the line */
+    width: 0;
+    height: 0.3vh; /* Adjust this value to change the line thickness */
+    background-color: black; /* Adjust this to your desired line color */
+    border: none;
+    transition: width 0.4s ease;
+}
+
+.page3 .top3 .hover-line-effect:hover hr {
+    width:100%;
+}
+
+.page3 .top3 h4 span {
+    font-size:1vw;
+    background-color: black;
+    color: white;
+    padding: 0.5vw 0.7vw;
+    border-radius: 15px;
+    /* margin-left:0.2vw; */
+}
+
+.page3 .top3 .line {
+    display:flex;
+}
+.page3 .top3 .line i{
+    margin-left: 1.4vw;
+}
+.page3 .top h2 hr {
+    color: black;
+    height:0.5vh
+}
+.page3-elem {
+    height:70vh;
+    width:94vw;
+    /* background-color: #ff8138;
+    border :1px solid blue; */
+} 
+.page3-elem .nav {
+    padding-top:10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.page3-elem .nav h3 {
+    font-size: 1.8vw;
+    font-weight: 10;
+    opacity: 1;
+    font-style: new;
+}
+
+
+.page3-elem .images{
+    margin-top:1.5vw;
+    /* position:absolute; */
+    height: 60vh;
+    /* background-color: brown; */
+    display:flex;
+    justify-content: space-between;
+}
+
+.page3-elem .images .box{
+    height:130%;
+    width:31.5%;
+    position:relative;
+    /* border:2px solid red; */
+    /* background-color: chartreuse; */
+}
+
+.page3-elem .images .box video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.images .box img {
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position:absolute;
+}
+.images .box:hover img{
+    opacity:0;
+    object-position: center;
+    transition: all ease-in 1s;
+} 
+.page4 {
+    height:100vh;
+    width:100vw;
+    /* background-color: aqua; */
+    position:relative;
+    margin-top:18vw;
+}
+.page4 .nav {
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6vw 4vw 0vw;
+}
+.page4 .nav h3 {
+    font-size: 1.7vw;
+    font-weight: 10;
+    opacity: 1;
+    font-style: new;
+}
+
+.page4 .hr {
+    padding: 1.3vw 3.6vw;
+}
+
+.page4_upper .text{
+    font-family: new;
+    font-size: 1.9vw;
+    word-spacing: 0.4vw;
+    padding: 0vw 4.8vw;
+} 
+.page4 .text h1 {
+    font-size: 3.9vw;
+    font-weight: 280;
+    font-family: new;
+} 
+.page5 {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} 
+.page5 video {
+    height:100%;
+    width: 100%;
+    
+}
+.page5 svg {
+    position:absolute;
+    height:60% /* war yetil */
+}
+.page6 {
+    height: 100vh;
+    width: 100vw;
+    padding: 5vw 0;
+    position: relative;
+    /* background-color: #ff8138; */
+}
+.page6 h1 {
+    font-size: 16vh;
+    font-family: pro;
+    font-weight: 110;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+    width: 96%;
+    margin-left: 3%;
+}
+.swiper-div {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    margin-top: -2.7%;
+}
+.swiper {
+    width: 120%;
+    height: 100%;
+    /* border:3px solid blue; */
+}
+.swiper-slide {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    /* border:5px solid red; */
+}
+.swiper-slide img {
+    display: block;
+    width: 18%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+.loader {
+    height: 100%;
+    width:100%;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.979);
+    z-index:99;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.4vw;
+    color: whitesmoke;
+}
+
+.loader h2 {
+    font-size:2vw;
+}
+.page7 {
+    height : 70vh;
+    width : 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page7 .page7-top {
+    display:flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap : 2vw
+}
+.page7 .page7-top h3 {
+    font-weight:120
+}
+.page7 .page7-top i {
+    font-weight: 1vw;
+}
+.page7 .hover-line-effect {
+    position: relative;
+    display: inline-block;
+}
+.page7 h1 {
+    color:black;
+    font-size: 1.4vw;
+    font-weight: 130;
+    margin-bottom: 1.15vw;
+}
+.page7 .hover-line-effect h2 {
+    color:black;
+    font-size: 4.7vw;
+    font-weight: 480;
+}
+
+.page7 .hover-line-effect hr {
+    position: absolute;
+    left: 0;
+    bottom:-0.1em; /* Adjust this value to place the line */
+    width: 0;
+    height: 0.5vh; /* Adjust this value to change the line thickness */
+    background-color: black; /* Adjust this to your desired line color */
+    border: none;
+    transition: width 0.4s ease;
+}
+
+.page7 .hover-line-effect:hover hr {
+    width:100%;
+}
+.page8 {
+    height: 70vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    /* position:absolute; */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left{
+    position:relative;
+    margin-left:3vw;
+}
+.page8 .right-nav {
+    display: flex;
+    flex-direction: column;
+    height:10vh;
+    width:9vw
+}
+
+.page8 .right-nav h2 {
+    font-size: 1.3rem;
+    margin-top:2vw
+}
+
+.page8 .right-nav button {
+    background: none;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 1vw 1.4vw;
+    color: white;
+    cursor: pointer;
+    margin-top:1.5vw;
+}
+
+.page8 .right-nav button h4 {
+    margin: 0;
+    font-weight:50;
+}
+
+.top {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    display:flex;
+    justify-content: center;
+    gap:2vw;
+    margin:4vw;
+    /* align-items: center; */
+}
+.col {
+    /* background-color: #ff8138; */
+    display:flex;
+    flex-direction:column;
+    padding-bottom: 2vw;
+    padding:1.2vw;
+    width:12vw;
+    /* display:flex; */
+    height:16vw;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: blue; */
+    margin-right:2vw;
+}
+.col h4 {
+    margin-bottom: 0.7vw;
+    transition: all 0.3s ease;
+}
+.col h4:hover {
+    cursor:pointer;
+    margin-top:1vw;
+    margin-bottom:1vw;
+    transform:scale(1.5)
+}
+.col .col1 h4:hover {
+    color:red;
+}
+
+.bottom {
+    margin: 2vw 3.7vw;
+    display:flex;
+    justify-content: space-between;
+}
+
+.bottom .bleft , .bottom .bright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2vw
+}
+
+.bottom .bleft h4 , .bottom .bright h4  {
+    font-weight:25
+}
+.page9 {
+    height:49vh;
+    width:100vw;
+    /* background-color: rgb(255, 0, 13); */
+    position:absolute;
+}
+.page8 .top .left button:hover {
+    background-color: aliceblue;
+    color: black;
+}
+.page9 h1 span{
+    font-size: 27vw;
+    font-weight: 100;
+    font-family: pro;
+    margin-top: -4vw;
+    display: inline-block;
+    color: white;
+}
+.page10 {
+    height:50vh;
+    width:100vw;
+    position:relative;
+    z-index:-1;
+    background-color: black;
+}
